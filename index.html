@@ -7,16 +7,24 @@
   <title>أكسسوارات الأمير | Accessoires EL-AMIR</title>
   <meta name="description" content="أكسسوارات الأمير في خنشلة — لواحق السيارات، الإطارات، الجنوط، ألواح الترقيم، وتجهيزات السيارات.">
 
+  <link rel="canonical" href="https://accessoires-el-amir.pages.dev/">
+
   <!-- Icônes raccourci / partage -->
   <link rel="icon" href="Image/Partage/favicon.ico">
   <link rel="apple-touch-icon" href="Image/Partage/apple-touch-icon.png">
   <link rel="manifest" href="Image/Partage/site.webmanifest">
 
-  <!-- Partage WhatsApp / réseaux -->
+  <!-- Aperçu de partage WhatsApp / SMS / réseaux -->
   <meta property="og:title" content="أكسسوارات الأمير | Accessoires EL-AMIR">
   <meta property="og:description" content="لواحق السيارات، الإطارات، الجنوط وألواح الترقيم في خنشلة">
-  <meta property="og:image" content="Image/logo-el-amir.png">
+  <meta property="og:image" content="https://accessoires-el-amir.pages.dev/Image/Partage/share-image.jpg?v=3">
+  <meta property="og:url" content="https://accessoires-el-amir.pages.dev/">
   <meta property="og:type" content="website">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="أكسسوارات الأمير | Accessoires EL-AMIR">
+  <meta name="twitter:description" content="لواحق السيارات، الإطارات، الجنوط وألواح الترقيم في خنشلة">
+  <meta name="twitter:image" content="https://accessoires-el-amir.pages.dev/Image/Partage/share-image.jpg?v=3">
 
   <meta name="theme-color" content="#f5c400">
 
@@ -49,11 +57,11 @@
     }
 
     .brand-logo {
-      width: 220px;
-      max-width: 74%;
+      width: 230px;
+      max-width: 76%;
       display: block;
       margin: 0 auto 16px;
-      border-radius: 20px;
+      border-radius: 22px;
       box-shadow: 0 12px 35px rgba(0,0,0,0.45);
     }
 
@@ -296,7 +304,7 @@
 
       .brand-logo {
         width: 190px;
-        max-width: 76%;
+        max-width: 78%;
       }
 
       .slogan {
@@ -463,7 +471,7 @@
           <img src="Image/07-electronique.jpg" alt="أجهزة راديو وشاشات">
           <span>أجهزة راديو وشاشات</span>
         </div>
- 
+
       </div>
     </section>
 
@@ -484,17 +492,19 @@
   </div>
 
   <script>
+    const SITE_URL = "https://accessoires-el-amir.pages.dev/";
+
     function shareSite() {
       const data = {
         title: "أكسسوارات الأمير | Accessoires EL-AMIR",
         text: "لواحق السيارات، الإطارات، الجنوط وألواح الترقيم في خنشلة",
-        url: window.location.href
+        url: SITE_URL
       };
 
       if (navigator.share) {
         navigator.share(data);
       } else {
-        navigator.clipboard.writeText(window.location.href);
+        navigator.clipboard.writeText(SITE_URL);
         alert("تم نسخ رابط الصفحة");
       }
     }
